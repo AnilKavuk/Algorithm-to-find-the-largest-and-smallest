@@ -1,21 +1,21 @@
 #Algorithm to find the largest and smallest numbers in the array (without using a function)
 
-n = [int(i) for i in input("Birer bosluk birakarak giriniz: ").split()]
+n = [int(i) for i in input("Please enter with a space: ").split()]
 
-bigNumber = n[0]
-bigNumberIndex = 0
-smallNumberIndex = 0
-smallNumber = n[0]
+maxNumber = n[0]
+maxNumberIndex = 0
+minNumberIndex = 0
+minNumber = n[0]
 
 for i in range(0, len(n)):
-    if (n[i] > bigNumber):
-        bigNumberİndex = i
-        bigNumber = n[i]
+    if (n[i] > maxNumber):
+        maxNumberİndex = i
+        maxNumber = n[i]
 
-    elif (n[i] < smallNumber):
-        smallNumberIndex = i
-        smallNumber = n[i]
+    elif (n[i] < minNumber):
+        minNumberIndex = i
+        minNumber = n[i]
 
-print("En buyuk deger ve indis degeri: " + str(bigNumber) + " " +
-      str(bigNumberİndex) + "\n" + "En kucuk deger ve indis degeri: " +
-      str(smallNumber) + " " + str(smallNumberIndex))
+print("Maximum value and index value: " + str(maxNumber) + " " +
+      str(maxNumberİndex) + "\n" + "Minimum value and index value: " +
+      str(minNumber) + " " + str(minNumberIndex))
